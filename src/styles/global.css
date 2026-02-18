@@ -1,15 +1,16 @@
 /* Global Styles - Svasthyaa Inspired Bakery Website */
 
 :root {
-  /* Color Palette - Warm & Professional */
-  --primary-color: #8B6F47;         /* Warm Brown */
-  --secondary-color: #D4A574;       /* Tan/Beige */
-  --accent-color: #C17844;          /* Rust Orange */
-  --light-bg: #FBF8F3;              /* Off White */
-  --dark-bg: #2C2C2C;               /* Dark Gray */
-  --text-dark: #3C3C3C;             /* Text Dark */
-  --text-light: #F5F5F5;            /* Text Light */
-  --border-color: #E8DCC8;          /* Light Border */
+  /* Color Palette - Svasthyaa Inspired */
+  --primary-color: #556B2F;        /* Dark Green */
+  --secondary-color: #D4A574;      /* Tan/Beige */
+  --accent-color: #708238;         /* Olive Green */
+  --light-bg: #F5F3EE;             /* Cream/Off White */
+  --dark-bg: #2C2C2C;              /* Dark Gray */
+  --text-dark: #3C3C3C;            /* Text Dark */
+  --text-light: #F5F5F5;           /* Text Light */
+  --border-color: #E8DCC8;         /* Light Border */
+  --banner-bg: #556B2F;            /* Banner Green */
   
   /* Typography */
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
-  color: var(--primary-color);
+  color: #556B2F;
 }
 
 h1 {
@@ -92,22 +93,22 @@ p {
 }
 
 a {
-  color: var(--primary-color);
+  color: #556B2F;
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: #708238;
 }
 
 /* Buttons */
 .btn {
   display: inline-block;
   padding: var(--spacing-sm) var(--spacing-lg);
-  border: 2px solid var(--primary-color);
+  border: 2px solid #556B2F;
   background-color: transparent;
-  color: var(--primary-color);
+  color: #556B2F;
   font-family: var(--font-primary);
   font-size: var(--font-size-base);
   border-radius: var(--radius-md);
@@ -118,30 +119,30 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: var(--primary-color);
+  background-color: #556B2F;
   color: var(--text-light);
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: #556B2F;
   color: var(--text-light);
-  border-color: var(--primary-color);
+  border-color: #556B2F;
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: #708238;
+  border-color: #708238;
 }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
-  color: var(--dark-bg);
-  border-color: var(--secondary-color);
+  background-color: #D4A574;
+  color: #2C2C2C;
+  border-color: #D4A574;
 }
 
 .btn-secondary:hover {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: #708238;
+  border-color: #708238;
   color: var(--text-light);
 }
 
@@ -229,15 +230,15 @@ section {
 }
 
 .text-primary {
-  color: var(--primary-color);
+  color: #556B2F;
 }
 
 .text-secondary {
-  color: var(--secondary-color);
+  color: #D4A574;
 }
 
 .text-accent {
-  color: var(--accent-color);
+  color: #708238;
 }
 
 .font-serif {
@@ -279,10 +280,10 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: #556B2F;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-color);
+  background: #708238;
 }
