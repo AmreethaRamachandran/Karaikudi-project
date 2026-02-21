@@ -60,6 +60,7 @@ export const Banner = () => {
       <div className="banner-container">
         <div className="banner-carousel">
           <div 
+            key={currentSlide}
             className="banner-slide"
             style={{
               backgroundImage: `url('${banner.image}')`,
