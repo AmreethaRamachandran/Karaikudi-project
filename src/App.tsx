@@ -7,8 +7,8 @@ function App() {
     <div className="app">
       <Header />
       <main>
-        <Hero />
         <ProductCategories />
+        <Hero />
       </main>
       <Footer />
     </div>
