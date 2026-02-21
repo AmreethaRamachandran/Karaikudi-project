@@ -5,17 +5,17 @@ export const ProductShowcase = () => {
     {
       id: 1,
       name: 'Protein Rich Khakhra',
-      image: 'https://via.placeholder.com/140x140/556B2F/F5F3EE?text=Khakhra',
+      image: 'https://via.placeholder.com/110x110/556B2F/F5F3EE?text=Khakhra',
     },
     {
       id: 2,
       name: 'Festive Collection',
-      image: 'https://via.placeholder.com/140x140/708238/F5F3EE?text=Festive',
+      image: 'https://via.placeholder.com/110x110/708238/F5F3EE?text=Festive',
     },
     {
       id: 3,
       name: 'Taste the Worlds Best Chana Jar Gram',
-      image: 'https://via.placeholder.com/140x140/8B6F47/F5F3EE?text=Chana',
+      image: 'https://via.placeholder.com/110x110/8B6F47/F5F3EE?text=Chana',
     },
   ];
 
