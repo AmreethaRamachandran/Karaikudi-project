@@ -27,14 +27,14 @@
 .product-showcase-wrapper {
   width: 100%;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .product-carousel {
   display: flex;
-  animation: scroll-left 50s linear infinite;
-  gap: 40px;
-  padding: 0 30px;
+  animation: scroll-left 25s linear infinite;
+  gap: 25px;
+  padding: 0 15px;
 }
 
 @keyframes scroll-left {
@@ -48,11 +48,11 @@
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 140px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   text-align: center;
 }
 
