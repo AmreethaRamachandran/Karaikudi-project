@@ -23,7 +23,7 @@ export const ProductShowcase = () => {
     <div className="product-showcase-container">
       <div className="carousel-wrapper">
         <div className="product-carousel">
-          {products.concat(products).map((product, index) => (
+          {products.concat(products).concat(products).concat(products).map((product, index) => (
             <div key={index} className="carousel-item">
               <img src={product.image} alt={product.title} className="product-image" />
               <p className="product-title">{product.title}</p>
