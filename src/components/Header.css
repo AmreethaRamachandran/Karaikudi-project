@@ -180,6 +180,14 @@
   align-items: center;
   justify-content: center;
   line-height: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
 }
 
 .icon-btn:hover {
