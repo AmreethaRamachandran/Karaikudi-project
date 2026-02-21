@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Banner />
       <main>
         <ProductCategories />
+        <Banner />
         <Hero />
       </main>
       <Footer />
