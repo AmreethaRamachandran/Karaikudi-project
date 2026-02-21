@@ -3,21 +3,38 @@
 .product-showcase-container {
   width: 100%;
   background-color: #FDFBF8;
-  padding: 30px 0;
   overflow: hidden;
   margin: 20px 0;
+}
+
+.showcase-header {
+  width: 100%;
+  height: 16px;
+  background: linear-gradient(90deg, #C4956F 0%, #D4A97E 25%, #C4956F 50%, #D4A97E 75%, #C4956F 100%);
+  background-size: 200% 100%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
 }
 
 .product-showcase-wrapper {
   width: 100%;
   overflow: hidden;
+  padding: 20px 0;
 }
 
 .product-carousel {
   display: flex;
-  animation: scroll-left 40s linear infinite;
-  gap: 80px;
-  padding: 0 40px;
+  animation: scroll-left 50s linear infinite;
+  gap: 40px;
+  padding: 0 30px;
 }
 
 @keyframes scroll-left {
@@ -29,126 +46,123 @@
   }
 }
 
-.product-item {
+.carousel-item {
   flex: 0 0 auto;
-  width: 200px;
+  width: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   text-align: center;
 }
 
 .product-image {
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
-  border-radius: 8px;
-  background-color: #FFFFFF;
+  border-radius: 6px;
+  background-color: transparent;
   border: 1px solid #E8DCC8;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.product-item:hover .product-image {
+.carousel-item:hover .product-image {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(85, 107, 47, 0.2);
 }
 
 .product-name {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 400;
   color: #3C3C3C;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 30px;
+  min-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .shop-btn {
-  padding: 8px 20px;
-  background-color: #556B2F;
-  color: #F5F3EE;
-  border: 1px solid #556B2F;
-  border-radius: 4px;
-  font-size: 12px;
+  padding: 6px 16px;
+  background-color: #C4956F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  font-size: 11px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
 }
 
 .shop-btn:hover {
-  background-color: #F5F3EE;
-  color: #556B2F;
+  background-color: #B68760;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(85, 107, 47, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .product-showcase-container {
-    padding: 20px 0;
-    margin: 15px 0;
-  }
-
-  .product-item {
-    width: 160px;
-    gap: 10px;
+  .carousel-item {
+    width: 120px;
+    gap: 6px;
   }
 
   .product-image {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
 
   .product-name {
-    font-size: 12px;
-    min-height: 25px;
+    font-size: 10px;
+    min-height: 20px;
   }
 
   .shop-btn {
-    padding: 6px 16px;
-    font-size: 11px;
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+
+  .product-carousel {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .showcase-header {
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    width: 100px;
+    gap: 5px;
+  }
+
+  .product-image {
+    width: 65px;
+    height: 65px;
+  }
+
+  .product-name {
+    font-size: 9px;
+    min-height: 18px;
+  }
+
+  .shop-btn {
+    padding: 4px 10px;
+    font-size: 9px;
   }
 
   .product-carousel {
     gap: 20px;
     padding: 0 15px;
   }
-}
 
-@media (max-width: 480px) {
-  .product-showcase-container {
-    padding: 15px 0;
-    margin: 10px 0;
-  }
-
-  .product-item {
-    width: 140px;
-    gap: 8px;
-  }
-
-  .product-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .product-name {
-    font-size: 11px;
-    min-height: 22px;
-  }
-
-  .shop-btn {
-    padding: 5px 14px;
-    font-size: 10px;
-  }
-
-  .product-carousel {
-    gap: 15px;
-    padding: 0 10px;
+  .showcase-header {
+    height: 10px;
   }
 }
