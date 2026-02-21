@@ -1,4 +1,4 @@
-import { Header, Hero, Footer } from './components'
+import { Header, Hero, ProductCategories, Footer } from './components'
 import './App.css'
 import './styles/global.css'
 
@@ -8,6 +8,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <ProductCategories />
       </main>
       <Footer />
     </div>
