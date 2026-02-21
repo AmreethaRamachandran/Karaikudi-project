@@ -4,40 +4,45 @@ export const ProductShowcase = () => {
   const products = [
     {
       id: 1,
-      name: 'Protein Rich Khakhra',
-      image: 'https://via.placeholder.com/90x90/556B2F/F5F3EE?text=Khakhra',
+      title: 'Festive Collection',
+      image: 'https://via.placeholder.com/200x180/D4C5B9/556B2F?text=Festive+Collection'
     },
     {
       id: 2,
-      name: 'Festive Collection',
-      image: 'https://via.placeholder.com/90x90/708238/F5F3EE?text=Festive',
+      title: 'Taste the Worlds Best Chana Jar Garam',
+      image: 'https://via.placeholder.com/200x180/C9B8B0/556B2F?text=Chana+Jar'
     },
     {
       id: 3,
-      name: 'Taste the Worlds Best Chana Jar Gram',
-      image: 'https://via.placeholder.com/90x90/8B6F47/F5F3EE?text=Chana',
+      title: 'Protein Rich Khakhra',
+      image: 'https://via.placeholder.com/200x180/D9C9BC/556B2F?text=Khakhra'
     },
+    {
+      id: 4,
+      title: 'Premium Namkeen Mix',
+      image: 'https://via.placeholder.com/200x180/C4956F/556B2F?text=Namkeen+Mix'
+    },
+    {
+      id: 5,
+      title: 'Diabetic Friendly Pack',
+      image: 'https://via.placeholder.com/200x180/D4A97E/556B2F?text=Diabetic+Pack'
+    },
+    {
+      id: 6,
+      title: 'Celebration Bundle',
+      image: 'https://via.placeholder.com/200x180/D4C5B9/556B2F?text=Celebration'
+    }
   ];
 
   return (
     <div className="product-showcase-container">
-      <div className="showcase-header"></div>
-      <div className="product-showcase-wrapper">
+      <div className="carousel-wrapper">
         <div className="product-carousel">
-          {/* First set */}
-          {products.map((product) => (
-            <div key={product.id} className="carousel-item">
-              <img src={product.image} alt={product.name} className="product-image" />
-              <button className="shop-btn">Shop Now</button>
-              <p className="product-name">{product.name}</p>
-            </div>
-          ))}
-          {/* Duplicate for seamless loop */}
-          {products.map((product) => (
-            <div key={`${product.id}-dup`} className="carousel-item">
-              <img src={product.image} alt={product.name} className="product-image" />
-              <button className="shop-btn">Shop Now</button>
-              <p className="product-name">{product.name}</p>
+          {products.concat(products).map((product, index) => (
+            <div key={index} className="carousel-item">
+              <img src={product.image} alt={product.title} className="product-image" />
+              <p className="product-title">{product.title}</p>
+              <button className="product-shop-btn">Shop Now</button>
             </div>
           ))}
         </div>
