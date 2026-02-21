@@ -16,21 +16,6 @@ export const ProductShowcase = () => {
       id: 3,
       title: 'Protein Rich Khakhra',
       image: 'https://via.placeholder.com/200x180/D9C9BC/556B2F?text=Khakhra'
-    },
-    {
-      id: 4,
-      title: 'Premium Namkeen Mix',
-      image: 'https://via.placeholder.com/200x180/C4956F/556B2F?text=Namkeen+Mix'
-    },
-    {
-      id: 5,
-      title: 'Diabetic Friendly Pack',
-      image: 'https://via.placeholder.com/200x180/D4A97E/556B2F?text=Diabetic+Pack'
-    },
-    {
-      id: 6,
-      title: 'Celebration Bundle',
-      image: 'https://via.placeholder.com/200x180/D4C5B9/556B2F?text=Celebration'
     }
   ];
 
