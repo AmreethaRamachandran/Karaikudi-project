@@ -1,0 +1,154 @@
+/* Product Showcase Carousel */
+
+.product-showcase-container {
+  width: 100%;
+  background-color: #F5F3EE;
+  padding: 30px 0;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.product-showcase-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-carousel {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.product-item {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.product-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8DCC8;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-item:hover .product-image {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(85, 107, 47, 0.2);
+}
+
+.product-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #3C3C3C;
+  margin: 0;
+  line-height: 1.4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-btn {
+  padding: 8px 20px;
+  background-color: #556B2F;
+  color: #F5F3EE;
+  border: 1px solid #556B2F;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.shop-btn:hover {
+  background-color: #F5F3EE;
+  color: #556B2F;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(85, 107, 47, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-showcase-container {
+    padding: 20px 0;
+    margin: 15px 0;
+  }
+
+  .product-item {
+    width: 160px;
+    gap: 10px;
+  }
+
+  .product-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-name {
+    font-size: 12px;
+    min-height: 25px;
+  }
+
+  .shop-btn {
+    padding: 6px 16px;
+    font-size: 11px;
+  }
+
+  .product-carousel {
+    gap: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-showcase-container {
+    padding: 15px 0;
+    margin: 10px 0;
+  }
+
+  .product-item {
+    width: 140px;
+    gap: 8px;
+  }
+
+  .product-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .product-name {
+    font-size: 11px;
+    min-height: 22px;
+  }
+
+  .shop-btn {
+    padding: 5px 14px;
+    font-size: 10px;
+  }
+
+  .product-carousel {
+    gap: 15px;
+    padding: 0 10px;
+  }
+}

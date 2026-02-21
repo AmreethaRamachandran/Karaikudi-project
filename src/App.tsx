@@ -1,4 +1,4 @@
-import { Header, Banner, ProductCategories, Hero, Footer } from './components'
+import { Header, Banner, ProductCategories, ProductShowcase, Hero, Footer } from './components'
 import './App.css'
 import './styles/global.css'
 
@@ -9,6 +9,7 @@ function App() {
       <main>
         <ProductCategories />
         <Banner />
+        <ProductShowcase />
         <Hero />
       </main>
       <Footer />
