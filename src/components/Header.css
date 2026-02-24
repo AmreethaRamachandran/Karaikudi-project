@@ -74,16 +74,31 @@
   font-size: 14px;
   padding: 8px 14px;
   display: block;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out;
   border-radius: 0;
   position: relative;
   text-decoration: none;
   letter-spacing: 0.2px;
 }
 
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #556B2F;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
 .nav-menu a:hover {
   color: #556B2F;
-  background-color: transparent;
+}
+
+.nav-menu a:hover::after {
+  width: 80%;
 }
 
 /* Dropdown Arrow */
@@ -151,11 +166,27 @@
   border-radius: 0;
   display: block;
   letter-spacing: 0.2px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.dropdown-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 18px;
+  width: 0;
+  height: 2px;
+  background-color: #556B2F;
+  transition: width 0.3s ease-in-out;
 }
 
 .dropdown-menu a:hover {
-  background-color: #F5F3EE;
   color: #556B2F;
+}
+
+.dropdown-menu a:hover::after {
+  width: calc(100% - 36px);
 }
 
 /* Nav Icons */
@@ -192,7 +223,8 @@
 
 .icon-btn:hover {
   color: #556B2F;
-  transform: scale(1.05);
+  transform: scale(1.1) rotate(5deg);
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-toggle {

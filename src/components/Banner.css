@@ -1,14 +1,6 @@
 /* Banner Carousel Styles */
 
-/* Fade In/Out Animation */
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 
 .whatsapp-icon {
   position: fixed;
@@ -57,7 +49,6 @@
   align-items: center;
   justify-content: center;
   opacity: 1;
-  animation: fadeInOut 1.5s ease-in-out forwards;
 }
 
 .banner-overlay {
@@ -66,7 +57,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(85, 107, 47, 0.6), rgba(112, 130, 56, 0.6));
+  background: transparent;
   z-index: 1;
 }
 
@@ -74,7 +65,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  color: white;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +82,8 @@
   letter-spacing: 1px;
   margin: 0;
   font-family: 'Georgia', 'Garamond', serif;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .banner-description {
@@ -99,7 +91,8 @@
   font-weight: 300;
   margin: 0;
   max-width: 600px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   letter-spacing: 0.5px;
 }
 

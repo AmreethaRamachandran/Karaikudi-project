@@ -7,35 +7,35 @@ export const Banner = () => {
   const banners = [
     {
       id: 1,
-      title: 'Fresh Artisan Breads',
-      description: 'Handcrafted daily with premium ingredients',
-      image: 'https://via.placeholder.com/1200x400/556B2F/F5F3EE?text=Fresh+Breads',
-      color: '#556B2F'
+      title: 'Murukku & Chakli',
+      description: 'Traditional spiral-shaped snacks, crispy and perfectly seasoned',
+      image: '/Images/banner image 1.jpeg',
+      color: '#8B5A3C'
     },
     {
       id: 2,
-      title: 'Premium Cakes & Pastries',
-      description: 'Celebrate every moment with our delicious creations',
-      image: 'https://via.placeholder.com/1200x400/708238/F5F3EE?text=Cakes+Pastries',
-      color: '#708238'
+      title: 'Mixture & Chivda',
+      description: 'Blend of roasted gram, peanuts, and cashews with aromatic spices',
+      image: 'https://via.placeholder.com/1200x400/A0826D/F5F3EE?text=Mixture+Chivda',
+      color: '#A0826D'
     },
     {
       id: 3,
-      title: 'Holiday Specials',
-      description: 'Limited time offers on our exclusive collection',
-      image: 'https://via.placeholder.com/1200x400/8B6F47/F5F3EE?text=Holiday+Specials',
-      color: '#8B6F47'
+      title: 'Sev & Chakkuli',
+      description: 'Delicate thread-like savory noodles made fresh daily',
+      image: 'https://via.placeholder.com/1200x400/9B7653/F5F3EE?text=Sev+Chakkuli',
+      color: '#9B7653'
+    },
+    {
+      id: 4,
+      title: 'Papad & Appalam',
+      description: 'Crispy wafers with authentic Indian spices and flavors',
+      image: 'https://via.placeholder.com/1200x400/7D6A5D/F5F3EE?text=Papad+Appalam',
+      color: '#7D6A5D'
     }
   ];
 
-  // Auto-advance banner every 5 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % banners.length);
-    }, 5000);
 
-    return () => clearInterval(timer);
-  }, [banners.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % banners.length);

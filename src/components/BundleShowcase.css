@@ -1,0 +1,249 @@
+/* ===============================
+   BUNDLE SHOWCASE CONTAINER
+================================= */
+
+.bundle-showcase-container {
+  width: 100%;
+  background: linear-gradient(to bottom, #f8f3ed, #f1e7dc);
+  padding: 50px 30px;
+  margin: 30px 0;
+}
+
+/* ===============================
+   TITLE
+================================= */
+
+.bundle-showcase-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ===============================
+   GRID LAYOUT
+================================= */
+
+.bundle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   BUNDLE CARD
+================================= */
+
+.bundle-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.bundle-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+/* ===============================
+   IMAGE CONTAINER
+================================= */
+
+.bundle-image-container {
+  position: relative;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f7f2ec;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bundle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+
+/* ===============================
+   SAVE BADGE
+================================= */
+
+.save-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #c41e3a, #8b1428);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+/* ===============================
+   RATING
+================================= */
+
+.bundle-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.review-count {
+  color: #888;
+  font-size: 12px;
+}
+
+/* ===============================
+   BUNDLE NAME
+================================= */
+
+.bundle-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* ===============================
+   PRICING
+================================= */
+
+.bundle-pricing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.original-price {
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c41e3a;
+}
+
+/* ===============================
+   QUANTITY SELECTOR
+================================= */
+
+.bundle-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  background: #f9f7f4;
+  border-radius: 6px;
+  padding: 6px 0;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 10px;
+  transition: color 0.2s ease;
+}
+
+.qty-btn:hover {
+  color: #4f6b2f;
+}
+
+.qty-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* ===============================
+   ADD TO CART BUTTON
+================================= */
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #d4c5b4, #c9b5a0);
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4f6b2f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(135deg, #c9b5a0, #bea590);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  .bundle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .bundle-showcase-title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bundle-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bundle-showcase-container {
+    padding: 30px 16px;
+  }
+
+  .bundle-showcase-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .bundle-image-container {
+    height: 180px;
+  }
+}

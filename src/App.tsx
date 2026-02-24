@@ -1,4 +1,4 @@
-import { Header, Banner, ProductCategories, ProductShowcase, Hero, Footer } from './components'
+import { Header, Banner, ProductCategories, ProductShowcase, BundleShowcase, ShopByCategory, CustomerReviews, SocialGallery, Hero, Footer } from './components'
 import './App.css'
 import './styles/global.css'
 
@@ -10,6 +10,10 @@ function App() {
         <ProductCategories />
         <Banner />
         <ProductShowcase />
+        <BundleShowcase />
+        <ShopByCategory />
+        <CustomerReviews />
+        <SocialGallery />
         <Hero />
       </main>
       <Footer />
